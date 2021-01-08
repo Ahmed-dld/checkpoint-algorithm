@@ -1,0 +1,35 @@
+
+
+
+  ALGORITHM checkpoint_algorithm
+  VAR
+  sentence : String
+  nbrEsp : INTEGER
+  nbrVow : INTEGER
+ nbrEsp:=0
+ nbrVow:=0
+
+  BEGIN
+      Write('Enter a sentence of your choice: ')
+      Read(sentence)
+      FOR i FROM 1 TO sentence.lenght   DO
+         IF (sentence[i]= ' ') THEN
+             nbrEsp=nbrEsp+1
+             IF (sentence[i]='o') or (sentence[i]='y') or (sentence[i]='s') or (sentence[i]='e') or (sentence[i]='a') or (sentence[i]='u') THEN
+                 nbrVow=nbrVow+1
+             END_IF
+         END_IF
+      END_FOR
+
+         WriTe ('Your sentence contains ',sentence.lenght,' sentence')
+
+          WriTe ('This sentence conts, nbrEsp + 1,nbrEsp'.)
+     
+         WriTe ('This sentence conts, nbrVow + 1,nbrVow'.)
+
+
+
+
+
+  END
+
